@@ -1,0 +1,44 @@
+.spinner {
+    /* Your styling */
+    animation: spin 1s linear infinite; /* Required */
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.country-card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.country-card img {
+    width: 150px;
+    margin-top: 10px;
+}
+
+.border-grid {
+    display: grid; /* or display: flex */
+    /* Additional layout properties */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+.error {
+    color: #e74c3c;
+    /* Additional styling */
+    background-color: #fdecea;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    max-width: 400px;
+    margin: 10px auto;
+    font-weight: bold;
+}
+.hidden {
+    display: none;
+}
